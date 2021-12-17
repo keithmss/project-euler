@@ -18,7 +18,6 @@ impl PrimeFactor {
     }
 }
 
-/// Iterator implementation for `PrimeFactor`
 impl Iterator for PrimeFactor {
     type Item = usize;
 
