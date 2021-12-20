@@ -3,7 +3,7 @@ use rayon::prelude::*;
 static FACTOR: u32 = 20;
 
 fn main() {
-    // Find, in parallel, the first number that is divisible by 1..20.
+    // Find, in parallel, the first number that is divisible by 1..`FACTOR`.
     let answer = (FACTOR..u32::MAX)
         .into_par_iter()
         .step_by(FACTOR as usize)
